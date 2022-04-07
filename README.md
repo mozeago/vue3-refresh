@@ -7,3 +7,4 @@ Props are attributes that need to be given a value in the parent component and e
 Child components can and should never reference data directly from parents components, only props to take control.  
 They should not be able to mutate parents states directly.  
 child components communicate with parents through `$emit(nameOfEvent)` and parents listen through `$on(nameOfEvent)`. Data can be passed along these events as well.  
+All actions that mutate/change store data should always be within the store itself to ensure proper centralization of application state.  
