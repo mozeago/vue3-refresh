@@ -8,3 +8,5 @@ Child components can and should never reference data directly from parents compo
 They should not be able to mutate parents states directly.  
 child components communicate with parents through `$emit(nameOfEvent)` and parents listen through `$on(nameOfEvent)`. Data can be passed along these events as well.  
 All actions that mutate/change store data should always be within the store itself to ensure proper centralization of application state.  
+component names should generally be multi-word (e.g. `CalendarEntry`  
+The filenames for single-file components should either be kebab-case (`calendar-entry.vue`) or PascalCase (`CalendarEntry.vue`)  
